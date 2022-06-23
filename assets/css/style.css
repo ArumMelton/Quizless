@@ -24,7 +24,7 @@
         }
 
         #goBack {
-            background-color: purple;
+            background-color: rgb(55, 6, 108);
             position: relative;
             padding: 10px;
             font-size: 20px;
@@ -39,7 +39,7 @@
 
 
         #clear {
-            background-color: purple;
+            background-color: rgb(55, 6, 108);
             position: relative;
             padding: 10px;
             font-size: 20px;
@@ -59,7 +59,7 @@
         }
 
         #Submit {
-            background-color: purple;
+            background-color: rgb(55, 6, 108);
             margin-left: 33%;
             padding: 15px 32px;
             font-size: 20px;
@@ -80,7 +80,7 @@
         }
 
         li {
-            background-color: purple;
+            background-color: rgb(55, 6, 108);
             margin-top: 10px;
             padding: 5px 15px;
             width: 80%;
@@ -108,6 +108,7 @@
 
     a {
         margin-left: 20%;
+        background-color: rgb(55, 6, 108);
     }
         #goBack {
 

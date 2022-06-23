@@ -114,3 +114,48 @@ function render(questionIndex) {
         }
 
     }
+
+
+
+    function allDone() {
+        questionsDiv.innerHTML = "";
+        currentTime.innerHTML = "";
+
+        // Heading:
+    var createH1 = document.createElement("h1");
+        createH1.setAttribute("id", "createH1");
+        createH1.textContent = "All Done!"
+        questionsDiv.appendChild(createH1);
+
+    var createP = document.createElement("p");
+        createP.setAttribute("id", "createP");
+
+    questionsDiv.appendChild(createP);
+    }
+    // does calculation for score given time remaining, ammount correct, and penalty //
+    if (timeLeft >= 0) {
+    var timeRemaining = timeLeft;
+    var createP2 = document.createElement("p");
+        clearInterval(holdInterval);
+        createP.textContent = "Final score: " + timeRemaining;
+        questionsDiv.appendChild(createP2);
+    }
+    // create label //
+var createLabel = document.createElement("label");
+    createLabel.setAttribute("id", "createLabel");
+    createLabel.textContent = "Enter initials: ";
+    questionsDiv.appendChild(createLabel);
+
+    // create user inputs //
+var createInput = document.createElement("input");
+    createInput.setAttribute("type", "text");
+    createInput.setAttribute("id", "initials");
+    createInput.textContent = "";
+    questionsDiv.appendChild(createInput);
+
+    // create submit button //
+var createSubmit = document.createElement("button");
+    createSubmit.setAttribute("type", "submit");
+    createSubmit.setAttribute("id", "Submit");
+    createSubmit.textContent = "Submit";
+    questionsDiv.appendChild(createSubmit);

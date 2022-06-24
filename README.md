@@ -28,4 +28,7 @@ THEN I can save my initials and score
 Challenges:
 One of the biggest challenges that I faced developing this app was truly understanding how to connect everything together. Understanding the concept of flow in code was a big part of this for me.
 
+Deployed Application: https://arummelton.github.io/Quizless/
+Github Repo: https://github.com/ArumMelton/Quizless
+
 ![Screenshot](/examples/Example1.png)

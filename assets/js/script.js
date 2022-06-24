@@ -188,8 +188,7 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page
-            //window.location.replace("./HighScores.html");
+            // takes user to last page to final page //
             window.location.replace("./highscore.html");
         }
     });

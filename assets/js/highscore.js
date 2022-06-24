@@ -24,7 +24,7 @@ if (allScores !== null) {
 
     }
 }
-// Event listener to move to index page
+// Event listener to redirect back to orginal page //
 goBack.addEventListener("click", function () {
     window.location.replace("./index.html");
 });

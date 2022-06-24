@@ -66,7 +66,7 @@ timer.addEventListener("click", function () {
 // function to display questions to page //
 
 function render(questionIndex) {
-    
+
     questionsDiv.innerHTML = "";
     elCreate.innerHTML = "";
 
@@ -97,11 +97,11 @@ function render(questionIndex) {
             // if correct //
             if (element.textContent == questions[questionIndex].answer) {
                 score++;
-                createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
+                createDiv.textContent = "Correct!";
             } else {
                 // if incorrect //
                 timeLeft = timeLeft - penalty;
-                createDiv.textContent = "Incorrect! The Correct answer is:   " + questions[questionIndex].answer;
+                createDiv.textContent = "Incorrect!";
             }
         }
 
@@ -137,21 +137,19 @@ function allDone() {
         createP.setAttribute("id", "createP");
 
     questionsDiv.appendChild(createP);
-    
+
     // does calculation for score given time remaining, amount correct, and penalty //
     if (timeLeft >= 0) {
     var timeRemaining = timeLeft;
     var createP2 = document.createElement("p");
         clearInterval(holdInterval);
         createP.textContent = "Final score: " + timeRemaining;
-        
         questionsDiv.appendChild(createP2);
     }
     // create label //
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter initials: ";
-    
     questionsDiv.appendChild(createLabel);
 
     // create user inputs //
@@ -159,7 +157,6 @@ function allDone() {
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
     createInput.textContent = "";
-    
     questionsDiv.appendChild(createInput);
 
     // create submit button //
@@ -167,15 +164,14 @@ function allDone() {
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
     createSubmit.textContent = "Submit";
-    
     questionsDiv.appendChild(createSubmit);
-    
+
     // event listener for initials //
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
         if (initials === null) {
-            
+
         } else {
             var finalScore = {
                 initials: initials,
@@ -198,4 +194,4 @@ function allDone() {
         }
     });
 }
-    
+

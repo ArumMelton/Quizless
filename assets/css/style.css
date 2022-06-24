@@ -17,6 +17,9 @@
         }
         #questionsDiv {
             margin: 20px;
+            font-weight: 1000;
+            font-size: x-large;
+            font-style: oblique;
         }
 
         #currentTime {
@@ -108,7 +111,7 @@
 
     a {
         margin-left: 20%;
-        background-color: rgb(55, 6, 108);
+        font-size: 15px;
     }
         #goBack {
 

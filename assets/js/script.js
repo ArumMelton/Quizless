@@ -162,7 +162,7 @@ function allDone() {
     // create submit button //
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
-    createSubmit.setAttribute("id", "Submit");
+    createSubmit.setAttribute("id", "submit");
     createSubmit.textContent = "Submit";
     questionsDiv.appendChild(createSubmit);
 

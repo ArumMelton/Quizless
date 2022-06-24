@@ -26,5 +26,5 @@ if (allScores !== null) {
 }
 // Event listener to redirect back to orginal page //
 goBack.addEventListener("click", function () {
-    window.location.replace("https://arummelton.github.io/Quizless/");
+    window.location.replace("./index.html");
 });
